@@ -1,0 +1,95 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.landing-img {
+  width: 100%;
+}
+
+.group {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.word1 {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  font-size: 130px;
+  font-weight: 900;
+  font-family: 'Quicksand', cursive;
+  color: #002A5C;
+  text-shadow:
+    -2px -2px 0 lightgreen,
+    2px -2px 0 lightgreen,
+    -2px 2px 0 lightgreen,
+    2px 2px 0 lightgreen; 
+  animation-delay: 1s;
+}
+
+.word2 {
+  position: absolute;
+  top: 150px;
+  right: 300px;
+  font-size: 130px;
+  font-weight: 900;
+  font-family: 'Quicksand', cursive;
+  color: #002A5C;
+  text-shadow:
+    -2px -2px 0 lightgreen,
+    2px -2px 0 lightgreen,
+    -2px 2px 0 lightgreen,
+    2px 2px 0 lightgreen; 
+  animation-delay: 2s; 
+}
+
+.word3 {
+  position: absolute;
+  top: 300px;
+  right: 165px; 
+  font-size: 130px;
+  font-weight: 900;
+  font-family: 'Quicksand', cursive;
+  color: #002A5C;
+  text-shadow:
+    -2px -2px 0 lightgreen,
+    2px -2px 0 lightgreen,
+    -2px 2px 0 lightgreen,
+    2px 2px 0 lightgreen; 
+  animation-delay: 3s;
+}
+
+.word4 {
+  position: absolute;
+  top: 450px;
+  right: 130px; 
+  font-size: 130px;
+  font-weight: 900;
+  font-family: 'Quicksand', cursive;
+  color: #002A5C;
+  text-shadow:
+    -2px -2px 0 lightgreen,
+    2px -2px 0 lightgreen,
+    -2px 2px 0 lightgreen,
+    2px 2px 0 lightgreen; 
+  animation-delay: 4s;  
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  font-family: "Quicksand", cursive;
+  background-color: #002A5C;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+.banner h1 {
+  padding-top: 70px;
+}
+
+.content {
+  padding: 50px 20px;
+}

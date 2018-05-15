@@ -1,0 +1,48 @@
+<main class="container">
+  <br>
+  <h1 class="centered">Cohorts</h1>
+  <br>
+  <br>
+  <table class="table">
+    <thead class="thead" style="background-color: #3CABDB;">
+      <tr class="font1">
+        <th scope="col">Name</th>
+        <th scope="col">Start date</th>
+        <th scope="col">End date</th>
+        <th scope="col">Course</th>
+        <th scope="col">Show</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @cohorts.each do |cohort| %>
+        <tr>
+          <td class="font2" scope="row"><%= cohort.name %></td>
+          <td class="font2" scope="row"><%= cohort.start_date %></td>
+          <td class="font2" scope="row"><%= cohort.end_date %></td>
+          <td class="font2 indent" scope="row"><%= cohort.course_id %></td>
+          <td class="font2 indent" scope="row"><%= link_to "<i data-feather='clipboard'></i>".html_safe, cohort %></td>
+          <td class="font2 indent" scope="row"><%= link_to "<i data-feather='edit'></i>".html_safe, edit_cohort_path(cohort) %></td>
+          <td class="font2 indent" scope="row"><%= link_to "<i data-feather='trash-2'></i>".html_safe, cohort, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+
+
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <button class="btn btn-lg btn-success btn-block" style="text-align: center;"><%= link_to 'New Cohort', new_cohort_path %></button>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</main>
+

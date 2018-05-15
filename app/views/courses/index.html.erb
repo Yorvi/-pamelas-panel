@@ -1,0 +1,43 @@
+<main class="container">
+  <br>
+  <h1 class="centered">Courses</h1>
+  <br>
+  <br>
+  <table class="table">
+    <thead class="thead" style="background-color: #3CABDB;">
+      <tr class="font1">
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Hours</th>
+        <th scope="col">Show</th>
+        <th scope="col">Edit</th>
+        <th colspan="6" scope="col">Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @courses.each do |course| %>
+        <tr>
+          <th class="font2" scope="row"><%= course.id %></th>
+          <td class="font2"><%= course.name %></td>
+          <td class="font2 indent"><%= course.hours %></td>
+          <td class="font2 indent"><%= link_to "<i data-feather='clipboard'></i>".html_safe, course %></td>
+          <td class="font2 indent"><%= link_to "<i data-feather='edit'></i>".html_safe, edit_course_path(course) %></td>
+          <td class="font2 indent"><%= link_to "<i data-feather='trash-2'></i>".html_safe, course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <button class="btn btn-lg btn-success btn-block" style="text-align: center;"><%= link_to 'New Course', new_course_path %></button>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</main>

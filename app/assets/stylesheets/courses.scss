@@ -1,0 +1,23 @@
+// Place all the styles related to the courses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.indent {
+  padding-left: 25px !important;
+}
+
+.centered {
+  text-align: center;
+}
+
+thead {
+  color: lightgreen;
+  text-shadow:
+    -1px -1px 0 #002A5C,
+    1px -1px 0 #002A5C,
+    -1px 1px 0 #002A5C,
+    1px 1px 0 #002A5C; 
+  border: 3px solid #002A5C;
+}
+

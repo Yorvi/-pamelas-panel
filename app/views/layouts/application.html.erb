@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PamelaPanel</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Raleway:300,400,700,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+  </head>
+
+  <body class="font2">
+    <nav class="shadow-sm navie sticky-top navbar navbar-expand-lg navbar-dark">
+      <h1><a class="font1 navbar-brand" href="#">A. Philip Randolph High School</a></h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="font1 navbar-nav">
+          <li class="pushed nav-item active">
+            <%= link_to "Home", root_path, :class => "nav-link" %>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 30px;">
+              More
+            </a>
+            <div class="dropdown-menu dark" aria-labelledby="navbarDropdownMenuLink">
+              <%= link_to "All Courses", courses_path, :class => "dropdown-item" %>
+              <%= link_to "All Cohorts", cohorts_path, :class => "dropdown-item" %>
+              <%= link_to "All Teachers", teachers_path, :class => "dropdown-item" %>
+              <%= link_to "All Students", students_path, :class => "dropdown-item" %>
+              <%= link_to "Student Cohorts", student_cohorts_path, :class => "dropdown-item" %>
+              <%= link_to "Teacher Cohorts", teacher_cohorts_path, :class => "dropdown-item" %>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="but btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+        
+    </nav>
+
+
+
+    <%= yield %>
+
+    <footer>
+      <div>
+        <ul>A. Philip Randolph Campus High School
+          <li>443 W. 135 St., New York, NY 10031</li>
+          <li>Phone: (212) 690-6800</li>
+          <li>Fax: (212) 690-6805</li>
+        </ul>
+      </div>
+    </footer>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  background-color: #EAEFFC !important;
+}
+
+main {
+  background-color: white;
+  height: 800px;
+}
+
+nav {
+  border-top-style: solid;
+  border-top-color: lightgreen; 
+  background-color: #002A5C; 
+}
+.navie a {
+  color: white !important;
+}
+.navie a:hover {
+  color: white !important;  
+}
+
+.pushed {
+  padding-left: 545px;
+}
+
+a {
+  color: #2D5980 !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: lightgreen !important;
+}
+
+.but {
+  background-color: #3CABDB !important;
+}
+.but:hover {
+  background-color: lightgreen !important;
+}
+
+.font1 {
+  font-family: 'Quicksand', cursive;
+}
+
+.font2 {
+  font-family: 'Raleway', cursive;
+}
+
+.dark a {
+  color: #2D5980 !important;
+}
+
+.dark a:hover {
+  color: lightgreen;
+  background-color: #2D5980;
+}
+
+footer {
+  background-color: #002A5C;
+  color: white;
+  width: 100%;
+  height: 260px;
+  border-bottom-style: solid;
+  border-bottom-color: lightgreen; 
+}
+
+footer div {
+  float: left;
+  padding: 80px 150px;
+}
+
+footer div ul {
+  list-style: none;
+  font-family: "Quicksand" ,cursive;
+  font-size: 20px;
+}
