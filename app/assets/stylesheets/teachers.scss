@@ -20,3 +20,12 @@ thead {
   border: 3px solid #002A5C;
 }
 
+.butt {
+  background-color: lightgreen !important;
+  color: #3CABDB !important;
+}
+
+.butt:hover {
+  background-color: #3CABDB !important;
+  color: lightgreen !important;
+}
