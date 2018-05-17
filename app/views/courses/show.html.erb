@@ -1,14 +1,47 @@
-<p id="notice"><%= notice %></p>
+<main class="container">
+  <br>
+  <h1 class="centered"><%= @course.name %>'s File</h1>
+  <br>
+  <br>
 
-<p>
-  <strong>Name:</strong>
-  <%= @course.name %>
-</p>
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <table class="sizing table">
+        <thead style="background-color: #3CABDB;">
+          <tr>
+            <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course Record</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="font1" scope="row"><strong>Name:</strong></th>
+            <td class="data"><%= @course.name %></td>
+          </tr>
+          <tr>
+            <th class="font1" scope="row"><strong>Hours:</strong></th>
+            <td class="data"><%= @course.hours %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
 
-<p>
-  <strong>Hours:</strong>
-  <%= @course.hours %>
-</p>
 
-<%= link_to 'Edit', edit_course_path(@course) %> |
-<%= link_to 'Back', courses_path %>
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <button class="butt btn btn-success btn-block" style="text-align: center;"><%= link_to 'Edit', edit_course_path(@course) %></button>
+      <button class="butt btn btn-success btn-block" style="text-align: center;"><%= link_to 'Back', courses_path %></button>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+
+
+</main>

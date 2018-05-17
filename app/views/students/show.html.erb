@@ -1,24 +1,55 @@
-<p id="notice"><%= notice %></p>
+<main class="container">
+  <br>
+  <h1 class="centered"><%= @student.first_name %> <%= @student.last_name %>'s File</h1>
+  <br>
+  <br>
 
-<p>
-  <strong>First name:</strong>
-  <%= @student.first_name %>
-</p>
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <table class="sizing table">
+        <thead style="background-color: #3CABDB;">
+          <tr>
+            <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student Record</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="font1" scope="row"><strong>First name:</strong></th>
+            <td class="data"><%= @student.first_name %></td>
+          </tr>
+          <tr>
+            <th class="font1" scope="row"><strong>Last name:</strong></th>
+            <td class="data"><%= @student.last_name %></td>
+          </tr>
+          <tr>
+            <th class="font1" scope="row"><strong>Age:</strong></th>
+            <td class="data"><%= @student.age %></td>
+          </tr>
+          <tr>
+            <th class="font1" scope="row"><strong>Education:</strong></th>
+            <td class="data"><%= @student.education %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @student.last_name %>
-</p>
 
-<p>
-  <strong>Age:</strong>
-  <%= @student.age %>
-</p>
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <button class="butt btn btn-success btn-block" style="text-align: center;"><%= link_to 'Edit', edit_student_path(@student) %></button>
+      <button class="butt btn btn-success btn-block" style="text-align: center;"><%= link_to 'Back', students_path %></button>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
 
-<p>
-  <strong>Education:</strong>
-  <%= @student.education %>
-</p>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+</main>
