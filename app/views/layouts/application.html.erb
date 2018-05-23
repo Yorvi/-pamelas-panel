@@ -16,7 +16,7 @@
 
   <body class="font2">
     <nav class="shadow-sm navie sticky-top navbar navbar-expand-lg navbar-dark">
-      <h1><a class="font1 navbar-brand" href="#">A. Philip Randolph High School</a></h1>
+      <h1><a class="font1 navbar-brand" href="/">A. Philip Randolph High School</a></h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,15 +25,23 @@
           <li class="pushed nav-item active">
             <%= link_to "Home", root_path, :class => "nav-link" %>
           </li>
+          <li class="nav-item">
+            <%= link_to "Courses", courses_path, :class => "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Teachers", teachers_path, :class => "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Students", students_path, :class => "nav-link" %>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 30px;">
-              More
+              Cohorts
             </a>
             <div class="dropdown-menu dark" aria-labelledby="navbarDropdownMenuLink">
-              <%= link_to "Courses", courses_path, :class => "dropdown-item" %>
               <%= link_to "Cohorts", cohorts_path, :class => "dropdown-item" %>
-              <%= link_to "Teachers", teachers_path, :class => "dropdown-item" %>
-              <%= link_to "Students", students_path, :class => "dropdown-item" %>
+              <%= link_to "Student Cohorts", student_cohorts_path, :class => "dropdown-item" %>
+              <%= link_to "Teacher Cohorts", teacher_cohorts_path, :class => "dropdown-item" %>
             </div>
           </li>
 

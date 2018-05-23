@@ -23,7 +23,7 @@
           <td class="font2" scope="row"><%= teacher.first_name %></td>
           <td class="font2" scope="row"><%= teacher.last_name %></td>
           <td class="font2" scope="row"><%= teacher.age %></td>
-          <td class="font2" scope="row"><%= teacher.salary %></td>
+          <td class="font2" scope="row">$&nbsp;<%= teacher.salary %></td>
           <td class="font2" scope="row"><%= teacher.education %></td>
           <td><%= link_to "<i data-feather='clipboard'></i>".html_safe, teacher %></td>
           <td><%= link_to "<i data-feather='edit'></i>".html_safe, edit_teacher_path(teacher) %></td>
